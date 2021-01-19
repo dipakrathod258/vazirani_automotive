@@ -1,0 +1,258 @@
+@import "../styles/colors";
+@import "../styles/fonts";
+
+@import "../styles/home";
+@import "../styles/design";
+@import "../styles/engineering";
+
+body {
+    margin: 0;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    background-color: $shul_dark;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.drawer-icon{
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 40px;
+  right: 30px;
+  @media screen and (max-width: 1024px){
+    display: block;
+  }
+}
+.drawer{
+  display: grid;
+  position: fixed;
+  right: 0;
+  direction: rtl;
+  z-index: 2;
+  width: 0vw;
+  height: 100vh;
+  background-color: rgba($color: $shul-dark, $alpha: 0.8);
+  backdrop-filter: blur(50px);
+  align-content: center;
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+  opacity: 0;
+  .divider{
+    border-bottom: 1px solid $shul_yellow;
+    opacity: 0.5;
+    width: 200px;
+    justify-self: center;
+  }
+}
+
+.drawer.active{
+  display: grid;
+  width: 80vw;
+  opacity: 1;
+}
+  
+    
+.nav-mobile{
+  display: grid;
+  font-family: "Arian";
+  color: $shul_yellow;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  transition: 600ms;
+  width: 80vw;
+  height: 50px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  a:hover{
+    opacity: 0.5;
+  }
+  .drop-down{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    height: fit-content;
+    width: 200px;
+    background-color: rgba($color: $shul-dark, $alpha: 0.5);
+    backdrop-filter: blur(50px);
+    top: 50px;
+    justify-self: center;
+    border-radius: 5px;
+    a{
+      padding: 10px 0px 10px 0px;
+    }
+  }
+  .drop-down.active{
+    display: grid;
+  }
+}
+
+.header{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  @media screen and (max-width: 1024px){
+    grid-template-columns: auto auto auto 1fr 1fr;
+  }
+  .shul-v-logo{
+    justify-self: left;
+    width: 45px;
+    height: 45px;
+    padding: 25px;
+    @media screen and (max-width: 640px){
+      display: none;
+    }
+  }
+  .shul-vazirani-logo{
+    justify-self: right;  
+    width: 250px;
+    height: 33px;
+    padding: 25px;
+    @media screen and (max-width: 640px){
+      width: 200px;
+    }
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .nav{
+    display: grid;
+    font-family: "Arian";
+    color: $shul_yellow;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    transition: 600ms;
+    width: 50px;
+    opacity: 0.7;
+    position: relative;
+    cursor: pointer;
+    a:hover{
+      opacity: 0.5;
+    }
+    
+    .drop-down{
+      display: none;
+      position: absolute;
+      z-index: 2;
+      height: fit-content;
+      width: 200px;
+      background-color: rgba($color: $shul-dark, $alpha: 0.5);
+      backdrop-filter: blur(50px);
+      top: 50px;
+      border-radius: 5px;
+      a{
+        padding: 10px 0px 10px 0px;
+      }
+      .divider{
+        border-bottom: 0.5px solid $shul_yellow;
+        opacity: 0.5;
+        height: 0px;
+        margin: unset;
+      }
+    }
+    .drop-down.active{
+      display: grid;
+    }
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
+  }
+  .divider{
+    border: 0.5px solid $shul_yellow;
+    opacity: 0.5;
+    margin: 30px 50px 30px 50px;
+    height: 50px;
+    @media screen and (max-width: 640px){
+      display: none;
+    }
+  }
+}
+
+.footer{
+  display: grid;
+  background-image: url("../images/FOOTER\ WEBSITE\ V\ BANNER1.png");
+  height: fit-content;
+  background-size: cover;
+  .legal{
+    text-align: center;
+    color: white;
+    font-family: "Futura";
+    font-size: 12px;
+    opacity: 0.3;
+    padding-bottom: 20px;
+  }
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  width: 100%;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Arian";
+  color: $shul_yellow;
+  font-weight: bold;
+  padding: 30px 0px 30px 0px;
+  align-items: center;
+  @media screen and (max-width: 720px){
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .email{
+    margin-left: 5vw;
+    @media screen and (max-width: 720px){
+      margin-left: 0px;
+    }
+    .title{
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
+  .shul-footer-graphic{
+    display: grid;
+    width: 320px;
+    justify-self: right;
+    margin-right: 5vw;
+    // margin-left: 17vw;
+    img{
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    @media screen and (max-width: 720px){
+      justify-self: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  position: relative;
+  width: 120px;
+  left: 220px;
+  top: -20px;
+  // @media screen and (max-width: 720px){
+  //   justify-self: center;
+  //   margin-right: 0px;
+  //   margin-top: 50px;
+  // }
+}
+

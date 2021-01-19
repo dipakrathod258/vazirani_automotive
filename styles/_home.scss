@@ -1,0 +1,166 @@
+.shul-hero-section{
+    .video-container{
+      width: 100%;
+      @media screen and (max-width: 1024px){
+        height: 50vh;
+      }
+      .shul-car-loop{
+        width: 100%;
+        @media screen and (max-width: 1024px){
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .we-build-sexxy{
+    position: absolute;
+    color: $shul_blue;
+    font-family: "Arian";
+    font-size: 15px;
+    top: 43vh;
+    left: -25px;
+    transform: rotateZ(-90deg);
+    letter-spacing: 0.15em;
+    opacity: 0.3;
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
+  }
+  
+  .home-sec2{
+    color: $shul_yellow;
+    font-family: "Futura";
+    font-size: 22px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7vw;
+    opacity: 0.7;
+    @media screen and (max-width: 540px){
+      font-size: 20px;
+    }
+    p{
+      max-width: 900px;
+    }
+    .divider{
+      width: 200px;
+      border: 0.5px solid $shul_yellow;
+      opacity: 0.5;
+      margin: 50px 0px 50px 0px;
+    }
+  }
+  
+  .home-sec3{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: fit-content;
+  
+    @media screen and (max-width: 1024px){
+      grid-template-columns: 1fr;
+      
+    }
+    .shul-gallery{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .shul-features{
+      color: $shul_yellow;
+      font-family: "Futura";
+      font-size: 22px;
+      display: grid;
+  
+      @media screen and (max-width: 1024px){
+        text-align: center;
+        margin-top: 12vw;
+        row-gap: 50px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .divider{
+        display: grid;
+        width: 0px;
+        height: 6vw;
+        border: 0.5px solid $shul_yellow;
+        opacity: 0.5;
+        align-self: center;
+        @media screen and (max-width:580px){
+          height: 0px;
+          width: 10vw;
+          justify-self: center;
+        }
+      }
+      .shul-logo{
+        display: grid;
+        width: 170px;
+        height: 70px;
+        justify-self: left;
+        margin-left: 4vw;
+        @media screen and (max-width: 1024px){
+          justify-self: center;
+        }
+      }
+      .shul-features-desc{
+        margin-left: 4vw;
+        padding: 0px 20px 0px 0px;
+        line-height: 1.4em;
+        opacity: 0.8;
+      }
+      .shul-features-pictures{
+        display: grid;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        font-size: 14px;
+        height: fit-content;
+        @media screen and (max-width: 580px){
+          grid-template-columns: 1fr;
+          row-gap: 50px;
+        }
+        >div:nth-child(odd){
+          display: grid;
+          height: fit-content;
+          >p{
+            justify-self: center;
+            opacity: 0.7;
+          }
+          >img{
+            height: 7vw;
+            @media screen and (max-width: 1024px){
+              height: 10vw;
+            }
+            @media screen and (max-width: 580px){
+              height: 20vw;
+            }
+            @media screen and (max-width: 480px){
+              height: 30vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .home-sec4{
+    margin: 12vw 0px 0px 0px;
+    .video-container{
+      width: 100%;
+      @media screen and (max-width: 1024px){
+        height: 50vh;
+      }
+      .shul-car-loop{
+        width: 100%;
+        @media screen and (max-width: 1024px){
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }

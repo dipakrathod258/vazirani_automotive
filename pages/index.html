@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazirani Automotive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/shul.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#1E1E24" />
+    <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16" />
+</head>
+<body>
+    <img class="drawer-icon" height="17px" src="../images/ham_menu.svg">
+    <div class="drawer">
+       
+        <div class="nav-mobile" style="justify-self: right;">
+            <a href="">Shul</a>     
+        </div>
+        <div class="divider"></div>
+        <div class="nav-mobile" style="justify-self: left;">          
+            <a id="services-mobile">Services</a>
+            <div class="drop-down">
+                <a href="../pages/design.html">Design</a>
+                <div class="divider"></div>
+                <a href="../pages/engineering.html">Engineering</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="shul-v-logo">
+                <a href=""><img src="../images/vazirani-v.png"></a>
+            </div>
+            <div class="nav" style="justify-self: right;">
+                <a href="">Shul</a>     
+            </div>
+            <div class="divider"></div>
+            <div class="nav" style="justify-self: left;">          
+                <a id="services">Services</a>
+                <div class="drop-down">
+                    <a href="../pages/design.html">Design</a>
+                    <div class="divider"></div>
+                    <a href="../pages/engineering.html">Engineering</a>
+                </div>
+            </div>
+            
+            <div class="shul-vazirani-logo">
+                <a href=""><img src="../images/vazirani-full-logo-yellow.png"></a>
+            </div>
+        </div>
+        <div class="shul-hero-section">
+            <div class="we-build-sexxy">
+                <span>We Build Sexxy</span>
+            </div>
+            <div class="video-container">
+                <video class="shul-car-loop" autoplay="" muted="" loop="" id="shul-car-loop">
+                    <source src="../videos/51 - Shul Final Car Loop Sequence 25 fps.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="home-sec2">
+            <div class="divider"></div>
+            <p>The entire Universe, including all matter, is a matrix of infinite electrical impulses.</p>
+            <p>It’s only natural that all our transportation goes electric. Vazirani aims to help the world make this transition seamless and fun.</p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="home-sec3">
+            <div class="shul-gallery">
+                <img src="../images/HOME PAGE GALLERY_CHUNKY.jpg">
+            </div>
+            <div class="shul-features">
+                <div class="shul-logo">
+                    <img src="../images/shul-logo-yellow.png">
+                </div>
+                <div class="shul-features-desc">
+                    <span>Redesigning the experience by giving the electric car a 'Soul'.</span><br>
+                    <span style="opacity: 0.5;">Coming soon.</span>
+                </div>
+                <div class="shul-features-pictures">
+                    <div>
+                        <img src="../images/CARBON TUB_GOLD2.png">
+                        <p>Carbon Fibre<br>
+                        Monocoque Cell</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <img src="../images/EV POWERTRAIN NEW_GOLD2.png">
+                        <p>Electric Powertrain<br>
+                        >1000hp</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <img src="../images/BODY_ILLUSTRATION_GOLD2.png">
+                        <p>Carbon Fibre<br>
+                            Body Work</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="home-sec4">
+            <div class="video-container">
+                <video class="shul-car-loop" autoplay="" muted="" loop="" id="shul-car-loop">
+                    <source src="../videos/49 - GoodwoodFOS_VaziraniA.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contact">
+                <div class="email">
+                    <div class="title">For Enquiries & Careers:</div>
+                    <div class="email-id">connect@vazirani-automotive.com</div>
+                </div>
+                <div class="shul-footer-graphic">
+                    <img src="../images/shul side.png">
+                    <div class="social-media">
+                        <div>
+                            <img height="30px" src="../images/ig-gold.png">
+                        </div>
+                        <div>
+                            <img height="26px" src="../images/fb-gold.png">
+                        </div>
+                        <div>
+                            <img height="62px" src="../images/yt-gold.png">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="legal">
+                <p>Copyright © 2021 Vazirani Automotive Pvt. Ltd. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>   
+    <script>
+        $("#services").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $("#services-mobile").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $(".drawer-icon").click(function(){
+            $(".drawer").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

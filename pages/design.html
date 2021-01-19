@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design | Vazirani Automotive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/shul.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#1E1E24" />
+    <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16" />
+</head>
+<body>
+    <img class="drawer-icon" height="17px" src="../images/ham_menu.svg">
+    <div class="drawer">
+       
+        <div class="nav-mobile" style="justify-self: right;">
+            <a href="../pages/index.html">Shul</a>     
+        </div>
+        <div class="divider"></div>
+        <div class="nav-mobile" style="justify-self: left;">          
+            <a id="services-mobile">Services</a>
+            <div class="drop-down">
+                <a href="">Design</a>
+                <div class="divider"></div>
+                <a href="">Engineering</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="shul-v-logo">
+                <a href="../pages/index.html"><img src="../images/vazirani-v.png"></a>
+            </div>
+            <div class="nav" style="justify-self: right;">
+                <a href="">Shul</a>     
+            </div>
+            <div class="divider"></div>
+            <div class="nav" style="justify-self: left;">          
+                <a id="services">Services</a>
+                <div class="drop-down">
+                    <a href="">Design</a>
+                    <div class="divider"></div>
+                    <a href="../pages/engineering.html">Engineering</a>
+                </div>
+            </div>
+            
+            <div class="shul-vazirani-logo">
+                <a href="../pages/index.html"><img src="../images/vazirani-full-logo-yellow.png"></a>
+            </div>
+        </div>
+        <div class="design-sec1">
+            <div class="design-feature-icons">
+                <div>
+                    <img src="../images/CONCEPT GOLD.png">
+                    <p>Concept</p>
+                </div>
+                <div>
+                    <img src="../images/CAD GOLD.png">
+                    <p>CAD</p>
+                </div>
+                <div>
+                    <img src="../images/ERGO GOLD.png">
+                    <p>Ergonomics</p>
+                </div>
+                <div class="push">
+                    <img src="../images/CNC GOLD.png">
+                    <p>Prototyping</p>
+                </div>
+                <div class="push2">
+                    <img src="../images/PRODUCT GOLD.png">
+                    <p>Product</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="design-sec2">
+            <div class="shul-gallery">
+                <img src="../images/8DESIGN GALLERY.jpg">
+            </div>
+            <div class="shul-design-development">
+                <h2>Complete Design Development</h2>
+                <p>From defining the concept to sketch ideation to a fully functioning prototype. Our studio is equipped and skilled to take care of any aspect of the design process for your needs to provide a sexy outcome.</p>
+                <ul>
+                    <li>Concept research</li>
+                    <li>Market analysis and trends</li>
+                    <li>Sketch phase</li>
+                    <li>Concept rendering (2D)</li>
+                    <li>CAD development</li>
+                    <li>CAD development</li>
+                    <li>Scale model fabrication</li>
+                    <li>Full scale functional prototype builds</li>
+                </ul>        
+            </div>
+        </div>
+
+        <div class="our-team-experience">
+            <h2>Our team experience:</h2>
+            <div class="company-logos">
+                <div>
+                    <img src="../images/Volvo Transparent gold drk.png">
+                </div>
+                <div>
+                    <img src="../images/Logo_Yamaha_transparent gold drk.png">
+                </div>
+                <div>
+                    <img src="../images/Rolls-Royce-logo gold dark.png" style="width: 130%;">
+                </div>
+                <div>
+                    <img src="../images/Jaguar_2012_logo_gold dark.png" style="width: 170%;">
+                </div>
+                <div>
+                    <img src="../images/Land rover gold drk.png" style="width: 170%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="our-customers">
+            <h2>Our customers:</h2>
+            <img src="../images/World-Map NEW DESIGN.jpg">
+        </div>
+
+        <div class="footer">
+            <div class="contact">
+                <div class="email">
+                    <div class="title">For Enquiries & Careers:</div>
+                    <div class="email-id">connect@vazirani-automotive.com</div>
+                </div>
+                <div class="shul-footer-graphic">
+                    <img src="../images/shul side.png">
+                    <div class="social-media">
+                        <div>
+                            <img height="30px" src="../images/ig-gold.png">
+                        </div>
+                        <div>
+                            <img height="26px" src="../images/fb-gold.png">
+                        </div>
+                        <div>
+                            <img height="62px" src="../images/yt-gold.png">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="legal">
+                <p>Copyright © 2021 Vazirani Automotive Pvt. Ltd. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>   
+    <script>
+        $("#services").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $("#services-mobile").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $(".drawer-icon").click(function(){
+            $(".drawer").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+.design-sec1{
+    display: grid;
+    background-image: url("../images/TALLER\ SKETCH.jpg");
+    background-color: #151517;
+    height: 120vh;
+    //min-height: 900px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1024px){
+        height: 75vh;
+    }
+    @media screen and (max-width: 640px){
+        // height: 75vh;
+        background-size: contain;
+    }
+    .design-feature-icons{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        height: fit-content;
+        margin-top: 20vh;
+        width: 60vw;
+        justify-self: center;
+        @media screen and (max-width: 1440px){
+            width: 65vw;
+        }
+        @media screen and (max-width: 1024px){
+            width: 80vw;
+        }
+        @media screen and (max-height: 700px){
+            margin-top: 130px;
+        }
+        @media screen and (max-width: 640px){
+            width: 95vw;
+            row-gap: 30px;
+            // grid-template-columns: auto auto auto;
+        }
+        // .push{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 1 / span 2;
+        //         margin-left: -5vw;
+        //     }
+        // }
+        // .push2{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 3 / span -1;
+        //         margin-left: -25vw;
+        //     }
+        // }
+        >div{
+            display: grid;
+            justify-self: center;
+            justify-items: center;
+            height: 100px;
+            img{
+                object-fit: contain;
+                // @media screen and (max-width: 640px){
+                //     width: 20px;
+                // }
+                height: 25px;
+                @media screen and (max-width: 640px){
+                    height: 22px;
+                }
+            }
+            p{
+                font-family: 'Arian';
+                font-weight: bold;
+                font-size: 13px;
+                color: $shul_yellow;
+                text-align: center;
+                justify-self: center;
+                margin-block-start: 0.5em;
+                opacity: 0.7;
+                @media screen and (max-width: 640px){
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+.design-sec2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    margin-top: 7vw;
+    @media screen and (max-width: 1024px){
+        margin-top: unset;
+      grid-template-columns: 1fr;
+    }
+    .shul-gallery{ 
+        @media screen and (max-width: 1024px){
+            grid-row: 2;
+        }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .shul-design-development{
+        color: $shul_blue;
+        padding: 0vw 5vw;
+        font-family: "Futura";
+        @media screen and (max-width: 1024px){
+            padding: 6vw;
+            grid-row: 1;
+        }
+
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 14px;
+            opacity: 0.5;
+        }
+        ul{
+            font-size: 16px;
+            padding-inline-start: 12px;
+            li{
+                padding: 5px;
+            }
+        }
+        @media screen and (max-width: 640px){
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+            ul{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.our-team-experience{
+    display: grid;
+    padding: 5vw 5vw 0vw 5vw;
+    h2{
+        font-family: "Futura";
+        font-weight: 400;
+        font-size: 26px;
+        color: $shul_blue;
+        opacity: 0.7;
+        @media screen and (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+    .company-logos{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-items: center;
+        div{
+            width: 5vw;
+            margin: 5vw 0vw;
+            @media screen and (max-width: 1024px){
+                width: 7vw;
+            }
+            img{
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.our-customers{
+    display: grid;
+    padding: 0vw 5vw;
+    height: fit-content;
+    h2{
+        font-family: "Futura";
+        font-weight: 400;
+        font-size: 26px;
+        opacity: 0.7;
+        color: $shul_blue;
+        @media screen and (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+    img{
+        object-fit: contain;
+        width: 100%;
+        //height: 100%;
+    }
+}
