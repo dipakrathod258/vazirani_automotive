@@ -36,7 +36,8 @@ a {
   height: 100vh;
   background-color: rgba($color: $shul-dark, $alpha: 0.8);
   backdrop-filter: blur(50px);
-  align-content: center;
+  align-content: flex-start;
+  padding-top: 30vh;
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   opacity: 0;
   .divider{
@@ -58,37 +59,44 @@ a {
   display: grid;
   font-family: "Arian";
   color: $shul_yellow;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  align-self: center;
+  align-self: flex-start;
   transition: 600ms;
   width: 80vw;
   height: 50px;
   align-items: center;
   position: relative;
   cursor: pointer;
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   a:hover{
     opacity: 0.5;
   }
-  .drop-down{
-    display: none;
-    position: absolute;
-    z-index: 4;
-    height: fit-content;
-    width: 200px;
-    background-color: rgba($color: $shul-dark, $alpha: 0.5);
-    backdrop-filter: blur(50px);
-    top: 50px;
-    justify-self: center;
-    border-radius: 5px;
-    a{
-      padding: 10px 0px 10px 0px;
-    }
+}
+.drop-down{
+  display: none;
+  font-family: "Arian";
+  color: $shul_yellow;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+  //position: absolute;
+  z-index: 4;
+  height: fit-content;
+  width: 200px;
+  background-color: rgba($color: $shul-dark, $alpha: 0.5);
+  backdrop-filter: blur(50px);
+  top: 50px;
+  justify-self: center;
+  border-radius: 5px;
+  a{
+    padding: 10px 0px 10px 0px;
   }
-  .drop-down.active{
-    display: grid;
-  }
+}
+.drop-down.active{
+  display: grid;
 }
 
 .header{
@@ -118,6 +126,7 @@ a {
     padding: 25px;
     @media screen and (max-width: 640px){
       width: 200px;
+      padding: 35px;
     }
   }
   img{
@@ -184,13 +193,13 @@ a {
 .footer{
   display: grid;
   background-image: url("../images/FOOTER\ WEBSITE\ V\ BANNER1.png");
-  height: fit-content;
+  height: min-content;
   background-size: cover;
   .legal{
     text-align: center;
     color: white;
     font-family: "Futura";
-    font-size: 12px;
+    font-size: 10px;
     opacity: 0.3;
     padding-bottom: 20px;
   }

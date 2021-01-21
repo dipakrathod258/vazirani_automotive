@@ -133,6 +133,17 @@
                 font-size: 14px;
             }
         }
+        @media screen and (max-width: 580px){
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 10px;
+            }
+            ul{
+                font-size: 10px;
+            }
+        }
     }
 }
 
@@ -147,6 +158,9 @@
         opacity: 0.7;
         @media screen and (max-width: 640px){
             font-size: 24px;
+        }
+        @media screen and (max-width: 580px){
+            font-size: 18px;
         }
     }
     .company-logos{
@@ -180,6 +194,9 @@
         color: $shul_blue;
         @media screen and (max-width: 640px){
             font-size: 24px;
+        }
+        @media screen and (max-width: 580px){
+            font-size: 18px;
         }
     }
     img{

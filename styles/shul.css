@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 540px) {
   .home-sec2 {
-    font-size: 20px;
+    font-size: 12px;
   }
 }
 
@@ -131,6 +131,14 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  .home-sec3 .shul-features {
+    margin-top: 5vw;
+    font-size: 12px;
+    row-gap: 30px;
+  }
+}
+
 .home-sec3 .shul-features img {
   width: 100%;
   height: 100%;
@@ -149,15 +157,6 @@
       align-self: center;
 }
 
-@media screen and (max-width: 580px) {
-  .home-sec3 .shul-features .divider {
-    height: 0px;
-    width: 10vw;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-}
-
 .home-sec3 .shul-features .shul-logo {
   display: -ms-grid;
   display: grid;
@@ -172,6 +171,12 @@
   .home-sec3 .shul-features .shul-logo {
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home-sec3 .shul-features .shul-logo {
+    width: 100px;
   }
 }
 
@@ -195,9 +200,8 @@
 
 @media screen and (max-width: 580px) {
   .home-sec3 .shul-features .shul-features-pictures {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     row-gap: 50px;
+    font-size: 8px;
   }
 }
 
@@ -227,13 +231,7 @@
 
 @media screen and (max-width: 580px) {
   .home-sec3 .shul-features .shul-features-pictures > div:nth-child(odd) > img {
-    height: 20vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .home-sec3 .shul-features .shul-features-pictures > div:nth-child(odd) > img {
-    height: 30vw;
+    height: 15vw;
   }
 }
 
@@ -445,6 +443,18 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+  .design-sec2 .shul-design-development h2 {
+    font-size: 18px;
+  }
+  .design-sec2 .shul-design-development p {
+    font-size: 10px;
+  }
+  .design-sec2 .shul-design-development ul {
+    font-size: 10px;
+  }
+}
+
 .our-team-experience {
   display: -ms-grid;
   display: grid;
@@ -462,6 +472,12 @@
 @media screen and (max-width: 640px) {
   .our-team-experience h2 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .our-team-experience h2 {
+    font-size: 18px;
   }
 }
 
@@ -511,6 +527,12 @@
 @media screen and (max-width: 640px) {
   .our-customers h2 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .our-customers h2 {
+    font-size: 18px;
   }
 }
 
@@ -623,19 +645,8 @@
 
 @media screen and (max-width: 720px) {
   .battery .battery-desc {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto 30vw;
-        grid-template-rows: auto 30vw;
-    padding: 15vw 5vw 5vw 5vw;
+    padding: 5vw 5vw 5vw 5vw;
     row-gap: 5vw;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .battery .battery-desc {
-    -ms-grid-rows: auto 40vw;
-        grid-template-rows: auto 40vw;
   }
 }
 
@@ -650,6 +661,12 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+  .battery .battery-desc h2 {
+    font-size: 24px;
+  }
+}
+
 .battery .battery-desc p {
   max-width: 800px;
   font-size: 14px;
@@ -658,6 +675,12 @@
 @media screen and (max-width: 640px) {
   .battery .battery-desc p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .battery .battery-desc p {
+    font-size: 10px;
   }
 }
 
@@ -682,6 +705,7 @@
   .battery .battery-details {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    row-gap: 50px;
   }
 }
 
@@ -702,11 +726,23 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+  .battery .battery-details h3 {
+    font-size: 14px;
+  }
+}
+
 .battery .battery-details p {
   color: #DCD4C8;
   max-width: 600px;
   font-size: 14px;
   opacity: 0.6;
+}
+
+@media screen and (max-width: 580px) {
+  .battery .battery-details p {
+    font-size: 10px;
+  }
 }
 
 .battery .battery-details .battery-details-pic {
@@ -725,6 +761,8 @@
 
 @media screen and (max-width: 1024px) {
   .battery .battery-details .battery-details-pic {
+    -ms-grid-row: 1;
+    grid-row: 1;
     height: 60vw;
     width: 100%;
     background-size: cover;
@@ -776,8 +814,9 @@ a {
   background-color: rgba(30, 30, 36, 0.8);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-top: 30vh;
   -webkit-transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   opacity: 0;
@@ -803,11 +842,10 @@ a {
   display: grid;
   font-family: "Arian";
   color: #FED697;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: flex-start;
   -webkit-transition: 600ms;
   transition: 600ms;
   width: 80vw;
@@ -817,15 +855,23 @@ a {
           align-items: center;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .nav-mobile a:hover {
   opacity: 0.5;
 }
 
-.nav-mobile .drop-down {
+.drop-down {
   display: none;
-  position: absolute;
+  font-family: "Arian";
+  color: #FED697;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   z-index: 4;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -840,11 +886,11 @@ a {
   border-radius: 5px;
 }
 
-.nav-mobile .drop-down a {
+.drop-down a {
   padding: 10px 0px 10px 0px;
 }
 
-.nav-mobile .drop-down.active {
+.drop-down.active {
   display: -ms-grid;
   display: grid;
 }
@@ -895,6 +941,7 @@ a {
 @media screen and (max-width: 640px) {
   .header .shul-vazirani-logo {
     width: 200px;
+    padding: 35px;
   }
 }
 
@@ -981,9 +1028,9 @@ a {
   display: -ms-grid;
   display: grid;
   background-image: url("../images/FOOTER WEBSITE V BANNER1.png");
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   background-size: cover;
 }
 
@@ -991,7 +1038,7 @@ a {
   text-align: center;
   color: white;
   font-family: "Futura";
-  font-size: 12px;
+  font-size: 10px;
   opacity: 0.3;
   padding-bottom: 20px;
 }

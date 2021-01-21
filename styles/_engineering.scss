@@ -76,13 +76,13 @@
             grid-template-columns: auto 35vw;
         }
         @media screen and (max-width: 720px){
-            grid-template-columns: auto;
-            grid-template-rows: auto 30vw;
-            padding: 15vw 5vw 5vw 5vw;
+            //grid-template-columns: auto;
+            //grid-template-rows: auto 30vw;
+            padding: 5vw 5vw 5vw 5vw;
             row-gap: 5vw;
         }
         @media screen and (max-width: 480px){
-            grid-template-rows: auto 40vw;
+            //grid-template-rows: auto 40vw;
         }
         h2{
             font-size: 34px;
@@ -90,12 +90,18 @@
             @media screen and (max-width: 640px){
                 font-size: 32px;
             }
+            @media screen and (max-width: 580px){
+                font-size: 24px;
+            }
         }
         p{
             max-width: 800px;
             font-size: 14px;
             @media screen and (max-width: 640px){
                 font-size: 16px;
+            }
+            @media screen and (max-width: 580px){
+                font-size: 10px;
             }
         }
         div{
@@ -115,6 +121,7 @@
         padding: 1vw 5vw 5vw 5vw;
         @media screen and (max-width: 1024px){
             grid-template-columns: 1fr;
+            row-gap: 50px;
         }
         >div>div{
             margin-bottom: 3vw;
@@ -126,12 +133,18 @@
             @media screen and (max-width: 640px){
                 font-size: 22px;
             }
+            @media screen and (max-width: 580px){
+                font-size: 14px;
+            }
         }
         p{
             color: $shul_yellow2;
             max-width: 600px;
             font-size: 14px;
             opacity: 0.6;
+            @media screen and (max-width: 580px){
+                font-size: 10px;
+            }
         }
         .battery-details-pic{
             grid-column: 0 / span 3;
@@ -143,6 +156,7 @@
                 background-size: contain;   
             }
             @media screen and (max-width: 1024px){
+                grid-row: 1;;
                 height: 60vw;
                 width: 100%;
                 background-size: cover;
