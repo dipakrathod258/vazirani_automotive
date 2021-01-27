@@ -675,6 +675,7 @@
 @media screen and (max-width: 640px) {
   .battery .battery-desc p {
     font-size: 16px;
+    max-width: 45vw;
   }
 }
 
@@ -689,6 +690,8 @@
      object-fit: contain;
   height: 100%;
   width: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .battery .battery-details {
@@ -833,7 +836,7 @@ a {
 .drawer.active {
   display: -ms-grid;
   display: grid;
-  width: 80vw;
+  width: 77vw;
   opacity: 1;
 }
 
@@ -924,12 +927,6 @@ a {
   padding: 25px;
 }
 
-@media screen and (max-width: 640px) {
-  .header .shul-v-logo {
-    display: none;
-  }
-}
-
 .header .shul-vazirani-logo {
   -ms-grid-column-align: right;
       justify-self: right;
@@ -942,6 +939,7 @@ a {
   .header .shul-vazirani-logo {
     width: 200px;
     padding: 35px;
+    display: none;
   }
 }
 
